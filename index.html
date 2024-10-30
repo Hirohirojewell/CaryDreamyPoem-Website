@@ -1,0 +1,191 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>The One Girl I Pursue</title>
+    <style>
+        /* Reset default margins and paddings */
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        /* Dark background styling */
+        body {
+            font-family: 'Georgia', serif;
+            background: linear-gradient(to bottom, #000010, #001f3f);
+            color: white;
+            overflow-x: hidden; /* Prevent horizontal scrolling */
+            min-height: 100vh;
+        }
+
+        /* Poem container styling */
+        .container {
+            margin: 100px auto;
+            max-width: 800px;
+            padding: 40px;
+            background-color: rgba(0, 0, 0, 0.8);
+            border-radius: 12px;
+            box-shadow: 0 4px 12px rgba(255, 255, 255, 0.1);
+        }
+
+        h1 {
+            text-align: center;
+            margin-bottom: 15px;
+            font-size: 36px;
+            color: #FFD700; /* Gold text for title */
+        }
+
+        p {
+            font-size: 20px;
+            line-height: 1.8;
+            margin: 15px 0;
+            text-align: justify;
+        }
+
+        footer {
+            margin-top: 20px;
+            font-style: italic;
+            text-align: center;
+            color: #ccc;
+        }
+
+        /* Stars animation */
+        @keyframes twinkle {
+            0%, 100% { opacity: 0.8; }
+            50% { opacity: 1; }
+        }
+
+        .star {
+            position: absolute;
+            background-color: white;
+            border-radius: 50%;
+            animation: twinkle 3s infinite;
+        }
+
+        .star:nth-child(odd) {
+            width: 2px;
+            height: 2px;
+            animation-duration: 2s;
+        }
+
+        .star:nth-child(even) {
+            width: 3px;
+            height: 3px;
+            animation-duration: 4s;
+        }
+
+        /* Stars container */
+        .stars {
+            position: fixed;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+            pointer-events: none;
+            overflow: hidden;
+        }
+    </style>
+</head>
+<body>
+
+<div class="stars">
+    <!-- Generate 150 stars -->
+    <script>
+        const starContainer = document.querySelector('.stars');
+        for (let i = 0; i < 150; i++) {
+            const star = document.createElement('div');
+            star.className = 'star';
+            star.style.top = `${Math.random() * 100}vh`;
+            star.style.left = `${Math.random() * 100}vw`;
+            starContainer.appendChild(star);
+        }
+    </script>
+</div>
+
+<div class="container">
+    <h1>The One Girl I Pursued</h1>
+
+  <hr> 
+  
+    <p>
+        I saw her first across the night, <br>
+        A spark of hope, a fleeting sight. <br>
+        Her gaze, a world I couldn’t deny, <br>
+        A silent promise beneath the sky.
+    </p>
+  
+  <hr>
+  
+    <p>
+        I followed trails that she had tread, <br>
+        Each word she spoke stayed in my head. <br>
+        Through whispers soft and moments few, <br>
+        I knew my heart would chase her too.
+    </p>
+  
+  <hr>
+  
+    <p>
+        I braved the storms, the quiet fear, <br>
+        Believing love would draw me near. <br>
+        And every smile that she would give, <br>
+        Made me certain, love must live.
+    </p>
+  
+  <hr>
+  
+    <p>
+        She walked with grace, so unaware, <br>
+        Of how my soul pursued her there. <br>
+        I watched her dance in sunlit streams, <br>
+        The one who lived inside my dreams.
+    </p>
+  
+  <hr>
+  
+    <p>
+        I wrote her name on stars above, <br>
+        A whispered prayer, a vow of love. <br>
+        With every step, I hoped she knew, <br>
+        That all I did was to pursue.
+    </p>
+  
+  <hr>
+  
+    <p>
+        The days grew long, the nights stretched thin, <br>
+        Yet still I fought to let love in. <br>
+        Her laugh became the song I’d sing, <br>
+        A beacon bright through everything.
+    </p>
+  
+  <hr>
+  
+    <p>
+        And when she smiled, the world was bright, <br>
+        Her voice could turn the dark to light. <br>
+        A simple glance, and I was through— <br>
+        Forever bound to her I knew.
+    </p>
+  
+  <hr>
+
+    <p>
+        Now here we stand, no more to chase, <br>
+        She smiles at me with quiet grace. <br>
+        The road was long, but dreams came true— <br>
+        At last, I found the one I pursued.
+    </p>
+
+  <hr>
+  
+    <footer>
+        — Written with every step of the journey in my mind, -CARY 
+    </footer>
+</div>
+
+</body>
+</html>
